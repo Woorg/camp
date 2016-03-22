@@ -1,0 +1,14 @@
+mixin address()
+	+b.address&attributes(attributes)
+		+e.in
+			+e('h2').title АДРЕСА ОФИСОВ
+			+e.maps
+				+e.map._1
+					+e.map-embed#first
+					+e.map-desc
+						+e('p').map-text Адрес: Москва, Новая площадь, д. 8, оф. 411 <br/>campindustry@mail.ru    8 (495) 542-39-00
+				+e.map._2
+					+e.map-embed#second
+					+e.map-desc
+						+e('p').map-text Адрес: Краснодар, ул. Коммунаров 266/3 <br/>campindustry@mail.ru    8 (988) 288-22-20
+

@@ -1,0 +1,13 @@
+mixin topline(data)
+	+b.topline&attributes(attributes)
+		+e.in
+			+b('nav').main-nav
+				+e('ul').list
+					+e('li').item
+						+e('a').link(href='#section-where') Где проходит
+					+e('li').item
+						+e('a').link(href='#section-program') Программа
+					+e('li').item
+						+e('a').link(href='#section-feedback') Отзывы
+					+e('li').item
+						+e('a').link(href='#section-address') Контакты

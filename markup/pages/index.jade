@@ -1,0 +1,57 @@
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../modules/bemto/bemto
+	include ../modules/head/head
+	include ../modules/topline/topline
+	include ../modules/header/header
+	include ../modules/hero/hero
+	include ../modules/where/where
+	include ../modules/schedule/schedule
+	include ../modules/video/video
+	include ../modules/whom/whom
+	include ../modules/program/program
+	include ../modules/features/features
+	include ../modules/know/know
+	include ../modules/gallery/gallery
+	include ../modules/reason/reason
+	include ../modules/feedback/feedback
+	include ../modules/crew/crew
+	include ../modules/speach/speach
+	include ../modules/achievements/achievements
+	include ../modules/advantages/advantages
+	include ../modules/address/address
+	include ../modules/questions/questions
+
+
+	head
+		+head(head.defaults)
+	body.page
+		|%=symbols=%
+		.page__w
+			+topline()
+			+header()
+			+hero()
+			+where()#section-where
+			+schedule()
+			+video()
+			+whom()
+			+program()#section-program
+			+features()
+			+know()
+			+gallery()
+			+reason()
+			+feedback()#section-feedback
+			+crew()
+			+speach()
+			+achievements()
+			+advantages()
+			+address()#section-address
+			+questions()
+
+
+		script(src='%=static=%js/separate-js/svg4everybody.min.js')
+		script svg4everybody();
+
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

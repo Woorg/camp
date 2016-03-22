@@ -1,0 +1,55 @@
+.hero
+	&__in
+		position relative
+		@extend .in
+		background-color #005393
+		border-radius 12px 12px 0 0
+		clearfix()
+	&__w
+		padding-top 50px
+		float left
+		width 418px
+		width remify(418px)
+	&__age
+		margin-bottom 18px
+		padding-left 90px
+		text-align left
+		font-calibri()
+		set-font-size(33px)
+		font-style italic
+		line-height 1
+		color #FFF
+		span
+			font-size 45px
+			font-weight 700
+			font-style italic
+			color #ffa200
+	&__text
+		padding-left 90px
+		text-align left
+		color white
+		font-weight 300
+		font-calibri()
+		set-font-size(30px)
+		line-height 33px
+		line-height remify(33px)
+		letter-spacing tracking(50)
+		span
+			display block
+			color #ffa200
+			font-weight 700
+			text-transform uppercase
+			letter-spacing normal
+	&__photo
+		float right
+		size 578px 425px
+		width remify(578px)
+		height remify(425px)
+		img
+			border-radius 0 12px 12px 0
+.badge
+	&_years
+		margin-left 127px
+		margin-bottom 33px
+		bg($badge_age)
+		text-indent -9999px

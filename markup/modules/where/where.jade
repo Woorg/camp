@@ -1,0 +1,35 @@
+mixin where()
+	+b.where&attributes(attributes)
+		+e.in
+			+e.w
+				+e('h2').title
+					+e('span') ГДЕ ПРОХОДИТ
+					| Анапа, Черное море
+				+e('p').text Награжден <br/>«Кубком Черного моря» <br/>в номинации <br/>«Лучшая детская здравница»
+				+b.placement
+					+e.col._small
+						+e.img.active
+							+e('img')(src='%=static=%images/content/place-1.jpg' alt='')
+						+e.img
+							+e('img')(src='%=static=%images/content/place-2.jpg' alt='')
+						+e.img
+							+e('img')(src='%=static=%images/content/place-3.jpg' alt='')
+						+e.img
+							+e('img')(src='%=static=%images/content/place-4.jpg' alt='')
+					+e.col._big
+						+e('img')(src='%=static=%images/content/place-1-big.jpg' alt='')
+						+e.caption
+							+e('h3').caption-title Размещение
+							+e.caption-text <span>ДОЛ "Энергетик"</span> расположен на берегу Черного моря в 12 км. от г. Анапа <br/>в заповеднике Большой Утриш
+					+e.col._small
+						+e.img
+							+e('img')(src='%=static=%images/content/place-5.jpg' alt='')
+						+e.img
+							+e('img')(src='%=static=%images/content/place-6.jpg' alt='')
+						+e.img
+							+e('img')(src='%=static=%images/content/place-7.jpg' alt='')
+						+e.img
+							+e('img')(src='%=static=%images/content/place-8.jpg' alt='')
+
+
+

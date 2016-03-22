@@ -1,0 +1,103 @@
+.where
+	&__in
+		position relative
+		@extend .in
+		padding 0 0 34px
+		background #FFF
+		color #005393
+		clearfix()
+	&__w
+		padding-left 18px
+		padding-right 18px
+	&__title
+		margin-top 37px
+		margin-left 3px
+		float left
+		font-calibri()
+		set-font-size(30px)
+		font-weight 400
+		line-height 33px
+		line-height remify(33px)
+		span
+			margin-bottom 12px
+			display block
+			set-font-size(49px)
+			font-weight 700
+	&__text
+		position relative
+		padding-top 36px
+		padding-right 188px
+		height 138px
+		min-height 138px
+		font-calibri()
+		set-font-size(20px)
+		font-weight 400
+		line-height 18px
+		line-height remify(18px)
+		text-align right
+		&:after
+			position absolute
+			top 0
+			right 0
+			content ""
+			bg($cup)
+
+.placement
+	margin-top 2px
+	clearfix()
+	&__col
+		float left
+		&_big
+			position relative
+			margin-left 4px
+			margin-right 4px
+			width 600px
+			width remify(600px)
+			height 363px
+			height remify(363px)
+		&_small
+			width 176px
+		&:first-child
+			margin-left 0px
+	&__caption
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		background-color rgba(255,255,255,.67)
+		font-calibri()
+	&__caption-title
+		padding-top 0
+		padding-bottom 0
+		padding-left 11px
+		background-color rgba(255,162,0,.67)
+		color black
+		set-font-size(25px)
+		font-weight 400
+	&__caption-text
+		padding-top 10px
+		padding-left 8px
+		padding-bottom 2px
+		color #005393
+		font-calibri()
+		set-font-size(15px)
+		font-weight 400
+		line-height 17px
+		line-height remify(17px)
+		span
+			padding-bottom 2px
+			display block
+			set-font-size(20px)
+			font-weight 700
+			text-transform uppercase
+	&__img
+		margin-bottom 3px
+		size 176px 88px
+		width remify(176px)
+		height remify(88px)
+		img
+			display block
+			size 176px 88px
+
+
+

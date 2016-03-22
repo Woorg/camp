@@ -1,0 +1,137 @@
+.schedule
+	&__in
+		position relative
+		padding-top 38px
+		padding-bottom 38px
+		@extend .in
+		background #005393 url('../images/general/glow.jpg') 100% 100% no-repeat
+	&__w
+		padding-left 18px
+		padding-right 18px
+	&__title
+		margin-bottom 9px
+		color white
+		font-calibri()
+		set-font-size(34px)
+		font-weight 400
+		line-height 33px
+		line-height remify(33px)
+		text-transform uppercase
+		text-align center
+.tabs
+	clearfix()
+	&__nav
+		margin-right 4px
+		width 176px
+		float left
+	&__item
+		margin-bottom 5px
+		background-color #1a7cc2
+		color white
+		font-calibri()
+		set-font-size(20px)
+		font-weight 400
+		&.active
+			a
+				background-color #4fdcff
+		a
+			padding 21px 0 18px
+			width 176px
+			display table
+			color #FFF
+			text-align center
+			text-decoration none
+			&:hover
+				background-color #4fdcff
+		span
+			display table-cell
+			vertical-align middle
+	&__content
+		float right
+		width 780px
+		display none
+		clearfix()
+		&.active
+			display block
+	&__photo
+		position relative
+		margin-bottom 5px
+		padding 4px
+		height 360px
+		background-color #4fdcff
+		z-index 2
+		img
+			max-width 100%
+			height auto
+	&__badge
+		position absolute
+		top 43px
+		left 39px
+		bg($badge_stat)
+		text-indent -9999px
+	&__photo-caption
+		position absolute
+		right 0
+		bottom 0
+		left 0
+		padding 17px 15px 18px
+		background-color rgba(79, 220, 255,.78)
+	&__photo-title
+		color white
+		font-calibri()
+		set-font-size(33px)
+		font-weight 400
+		line-height 33px
+		line-height remify(33px)
+		text-transform uppercase
+		span
+			font-weight 700
+	&__price
+		float left
+		clearfix()
+	&__price-row
+		position relative
+		margin-bottom 3px
+		clearfix()
+	&__price-col
+		margin-right 5px
+		margin-bottom 0
+		padding 8px 0 6px
+		display table
+		float left
+		width 316px
+		min-height 29px
+		background-color #82c2ef
+		text-align center
+		color black
+		span
+			display table-cell
+			vertical-align middle
+	&__discount
+		position relative
+		margin-right -7px
+		float right
+		z-index 1
+
+		&:after
+			position absolute
+			content ""
+			top -3px
+			left -114px
+			bg($arrow)
+	&__discount-text
+		margin-top 2px
+		bg($discount)
+		text-indent -9999px
+
+	&__discount-button
+		margin-top -1px
+		display block
+		bg($button)
+		text-indent -9999px
+
+
+
+
+
+

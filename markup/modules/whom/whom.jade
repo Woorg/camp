@@ -1,0 +1,16 @@
+mixin whom()
+	+b.whom&attributes(attributes)
+		+e.in
+			+e('h2').title Для кого наш лагерь
+
+			+e('ul').list
+				+e('li').item._1
+					+e.item-icon._1
+					| <span>Для детей <br/>от 7 до 18 лет</span>
+				+e('li').item._2
+					+e.item-icon._2
+					| <span>Для детей <br/>проживающих в РФ</span>
+				+e('li').item._3
+					+e.item-icon._3
+					| <span>Для детей со <br/>всего мира</span>
+

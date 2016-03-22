@@ -1,0 +1,8 @@
+mixin questions()
+	+b.questions&attributes(attributes)
+		+e.in
+			+e('h2').title ОСТАЛИСЬ ВОПРОСЫ? МЫ ВАМ ПЕРЕЗВОНИМ
+			+e('form').form
+				+e('input').input(type='text' placeholder='Ваше имя' value='')
+				+e('input').input(type='text' placeholder='Ваш телефон' value='')
+				+e('input').submit(type='submit' value='Отправить')

@@ -1,0 +1,27 @@
+mixin gallery()
+	+b.gallery&attributes(attributes)
+		+e.in
+			+e('h2').title Фотогалерея
+			+e.slider-w.carousel-container
+				+b.slider#carousel
+					+e.item.carousel-feature
+						+e('a')(href='assets/images/content/gallery-img-2.jpg')
+							+e('img').image.carousel-image(src='assets/images/content/gallery-img-2.jpg' alt='')
+					+e.item.carousel-feature
+						+e('a')(href='assets/images/content/gallery-img-1.jpg')
+							+e('img').image.carousel-image(src='assets/images/content/gallery-img-1.jpg' alt='')
+					+e.item.carousel-feature
+						+e('a')(href='assets/images/content/gallery-img-3.jpg')
+							+e('img').image.carousel-image(src='assets/images/content/gallery-img-3.jpg' alt='')
+					+e.item.carousel-feature
+						+e('a')(href='assets/images/content/gallery-img-3.jpg')
+							+e('img').image.carousel-image(src='assets/images/content/gallery-img-3.jpg' alt='')
+					+e.item.carousel-feature
+						+e('a')(href='assets/images/content/gallery-img-3.jpg')
+							+e('img').image.carousel-image(src='assets/images/content/gallery-img-3.jpg' alt='')
+
+				+b.slider-nav
+					+e.back.carousel-left Вперед
+					+e.next.carousel-right Назад
+
+
